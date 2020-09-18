@@ -276,7 +276,7 @@ function renderAll(template) {
     page += template;
   }
 
-  if (store.quizStarted === true && store.questionNumber === 0 ){
+  if (store.quizStarted === true && store.questionNumber === store.questions.length){
     page += endOfQuiz();
   }
 
